@@ -140,6 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Golf Handicap Calculator.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerList.cpp" />
+    <ClCompile Include="PlayerListHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerList.h" />
+    <ClInclude Include="PlayerListHandler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
