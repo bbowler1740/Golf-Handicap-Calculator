@@ -1,27 +1,29 @@
 #include <iostream>
+#include "Course.h"
 #include "Player.h"
 #include "PlayerList.h"
 #include "PlayerListHandler.h"
+#include "Round.h"
 
 int main()
 {
-   
-	Player* p = new Player("Brayden", "Bowler", 7.50);
+   //Player, PlayerList, PlayerListHandler
+	/*Player* p = new Player("Brayden", "Bowler", 7.50);
 	Player* p2 = new Player("Harrison", "Bowler", 25.00);
 
-	//p->displayPlayer();
+	p->displayPlayer();
 
-	//cout << p2->getFirstName() << endl;
-	//cout << p2->getLastName() << endl;
-	//cout << p2->getHandicap() << endl;
+	cout << p2->getFirstName() << endl;
+	cout << p2->getLastName() << endl;
+	cout << p2->getHandicap() << endl;
 
-	//Player* p3 = new Player();
+	Player* p3 = new Player();
 
-	//p3->setFirstName("Nigel");
-	//p3->setLastName("Bowler");
-	//p3->setHandicap(15.00);
+	p3->setFirstName("Nigel");
+	p3->setLastName("Bowler");
+	p3->setHandicap(15.00);
 
-	//p3->displayPlayer();
+	p3->displayPlayer();
 
 
 	PlayerList* playerList = new PlayerList();
@@ -34,10 +36,60 @@ int main()
 
 	playerList->displayPlayerList();
 
+	playerList->addPlayer(p2);
+
 	PlayerListHandler::savePlayerList(playerList);
 
-	PlayerList* newPlayerList = PlayerListHandler::loadPlayerList();
+	PlayerList* newPlayerList = PlayerListHandler::loadPlayerList();*/
+
+	//Course
+	/*Course* newCourse = new Course();
+
+	string courseName = "The Heathlands";
+	string clubName = "Osprey Valley";
+	char coursePar = 72;
+	double courseRating = 73.8;
+
+	Course* anotherNewCourse = new Course(courseName, clubName, courseRating, coursePar);
+
+	courseName = "Savannah Golf Links";
+	clubName = "N/A";
+	coursePar = 71;
+	courseRating = 69.4;
+
+	newCourse->setCourseName(courseName);
+	newCourse->setClubName(clubName);
+	newCourse->setCourseRating(courseRating);
+	newCourse->setCoursePar(coursePar);
+
+	newCourse->displayCourse();
+	anotherNewCourse->displayCourse();*/
+
+	//Round
+
+	string courseName = "The Heathlands";
+	string clubName = "Osprey Valley";
+	char coursePar = 72;
+	double courseRating = 73.8;
+
+	Course* anotherNewCourse = new Course(courseName, clubName, courseRating, coursePar);
+
+	Course* playedCourse = new Course();
+	char score = 70;
+	char dayPlayed = 3;
+	char monthPlayed = 6;
+	short yearPlayed = 2021;
+
+	Round* myOtherRound = new Round(playedCourse, score, dayPlayed, monthPlayed, yearPlayed);
+
+	Round* myOtherOtherRound = new Round(anotherNewCourse, score, dayPlayed, monthPlayed, yearPlayed);
+
+	Round* round = new Round();
+
+	round->displayRound();
+	myOtherRound->displayRound();
+	myOtherOtherRound->displayRound();
+
 
 	return 0;
-
 }
