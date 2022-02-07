@@ -4,19 +4,34 @@ using namespace std;
 
 bool NearestNeighbourClassifier::predictPoint(DataPoint* dataPoint) {
 
-	short closestDistance = std::numeric_limits<short>::max();
-	short indexOfClosest = 0;
+	try {
 
-	for (DataPoint* dp : this->trainedData.vectorOfDataPoints) {
+		short closestDistance = std::numeric_limits<short>::max();
+		short indexOfClosest = 0;
 
-		short currDistance = distanceBetweenShots(dp, dataPoint);
-		short currIndex = 0;
-		if (currDistance < closestDistance) {
-			closestDistance = currDistance;
-			indexOfClosest = currIndex;
+		for (DataPoint* dp : this->trainedData.vectorOfDataPoints) {
+
+			short currDistance = distanceBetweenShots(dp, dataPoint);
+			short currIndex = 0;
+
+			if (currDistance < closestDistance) {
+				closestDistance = currDistance;
+				indexOfClosest = currIndex;
+			}
+
+			currIndex++;
+
 		}
 
-		currIndex++;
+		dataPoint->setClub(this->trainedData.vectorOfDataPoints.at(indexOfClosest)->getClub());
+		return true;
+
+	}
+
+	catch (...) {
+
+		cout << "Error making a prediction." << endl;
+		return false;
 
 	}
 
