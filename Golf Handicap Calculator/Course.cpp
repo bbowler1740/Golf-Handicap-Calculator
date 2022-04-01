@@ -2,16 +2,25 @@
 
 using namespace std;
 
-
+/// <summary>
+/// Safestate default Course constructor.
+/// </summary>
 Course::Course() {
 
-	this->clubName = "";
-	this->courseName = "";
-	this->coursePar = 0;
-	this->courseRating = 0.00;
+	this->clubName = "Unset";
+	this->courseName = "Unset";
+	this->coursePar = NULL;
+	this->courseRating = NULL;
 
 }
 
+/// <summary>
+/// Parameterized Course constructor.
+/// </summary>
+/// <param name="clubName">The club the Course belongs to, if applicable.</param>
+/// <param name="courseName">The name of the Course.</param>
+/// <param name="courseRating">Rating of the course.</param>
+/// <param name="coursePar">Pay of the course.</param>
 Course::Course(std::string clubName, std::string courseName, double courseRating, char coursePar) {
 
 	this->clubName = clubName;
@@ -20,6 +29,7 @@ Course::Course(std::string clubName, std::string courseName, double courseRating
 	this->coursePar = coursePar;
 
 }
+
 
 void Course::setCourseName(std::string courseName) {
 

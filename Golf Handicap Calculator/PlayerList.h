@@ -15,7 +15,6 @@ private:
 
 	std::vector<Player*> playerList;
 	
-
 public:
 
 	void addPlayer(Player*);

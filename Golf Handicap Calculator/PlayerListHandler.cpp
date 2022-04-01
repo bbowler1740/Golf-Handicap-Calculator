@@ -2,6 +2,10 @@
 
 using namespace std;
 
+/// <summary>
+/// Saves the PlayerList object to file.
+/// </summary>
+/// <param name="playerList">PlayerList object to be saved to file.</param>
 void PlayerListHandler::savePlayerList(PlayerList* playerList) {
 
 	if (FILE_NAME) {
@@ -38,6 +42,10 @@ PlayerList* PlayerListHandler::loadPlayerList() {
 	std::string readLine;
 	double handicap;
 
+	//Player objects are saved to file in three consecutive lines.
+	//1. Check which line is currently being read.
+	//2. Based on the line number, determine which Player object member is being read.
+	//3. Reset the line count once a Player object is fully read into program memory.
 	int fileLineCount = 1;
 	if (loadFile.is_open()) {
 

@@ -8,7 +8,7 @@
 int main()
 {
    //Player, PlayerList, PlayerListHandler
-	/*Player* p = new Player("Brayden", "Bowler", 7.50);
+	Player* p = new Player("Brayden", "Bowler", 7.50);
 	Player* p2 = new Player("Harrison", "Bowler", 25.00);
 
 	p->displayPlayer();
@@ -40,10 +40,10 @@ int main()
 
 	PlayerListHandler::savePlayerList(playerList);
 
-	PlayerList* newPlayerList = PlayerListHandler::loadPlayerList();*/
+	PlayerList* newPlayerList = PlayerListHandler::loadPlayerList();
 
 	//Course
-	/*Course* newCourse = new Course();
+	Course* newCourse = new Course();
 
 	string courseName = "The Heathlands";
 	string clubName = "Osprey Valley";
@@ -63,7 +63,7 @@ int main()
 	newCourse->setCoursePar(coursePar);
 
 	newCourse->displayCourse();
-	anotherNewCourse->displayCourse();*/
+	anotherNewCourse->displayCourse();
 
 	//Round
 
