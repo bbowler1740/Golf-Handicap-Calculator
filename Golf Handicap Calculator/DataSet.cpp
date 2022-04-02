@@ -2,28 +2,12 @@
 
 using namespace std;
 
-class DataSet {
+void DataSet::addPoint(DataPoint* dataPoint) {
 
-protected:
+	this->vectorOfDataPoints.push_back(dataPoint);
 
-    std::vector<DataPoint*> vectorOfDataPoints;
+}
 
-public:
-
-    DataSet();
-
-    void addPoint(DataPoint* dataPoint) {
-
-        this->vectorOfDataPoints.push_back(dataPoint);
-
-    }
-
-    void removePoint(DataPoint*);
-
-    void displayDataSet();
-
-
-};
 
 
 

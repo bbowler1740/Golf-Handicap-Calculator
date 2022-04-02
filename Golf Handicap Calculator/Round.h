@@ -18,8 +18,6 @@ public:
 	Round();
 	Round(Course*, char, char, char, short);
 
-
-
 	void setCourse(Course*);
 	void setScore(char);
 	void setDayPlayed(char);
@@ -33,6 +31,5 @@ public:
 	short getYearPlayed();
 
 	void displayRound();
-
 
 };

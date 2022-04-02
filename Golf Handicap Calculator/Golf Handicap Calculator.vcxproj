@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Course.cpp" />
+    <ClCompile Include="CourseList.cpp" />
+    <ClCompile Include="CourseListHandler.cpp" />
     <ClCompile Include="DataPoint.cpp" />
     <ClCompile Include="DataSet.cpp" />
     <ClCompile Include="Golf Handicap Calculator.cpp" />
@@ -152,6 +154,8 @@
   <ItemGroup>
     <ClInclude Include="Course.h" />
     <ClInclude Include="Classifier.h" />
+    <ClInclude Include="CourseList.h" />
+    <ClInclude Include="CourseListHandler.h" />
     <ClInclude Include="DataPoint.h" />
     <ClInclude Include="DataSet.h" />
     <ClInclude Include="NearestNeighbourClassifier.h" />

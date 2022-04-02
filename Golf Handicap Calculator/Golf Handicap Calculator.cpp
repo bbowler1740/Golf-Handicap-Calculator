@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Course.h"
+#include "CourseList.h"
+#include "CourseListHandler.h"
 #include "Player.h"
 #include "PlayerList.h"
 #include "PlayerListHandler.h"
@@ -8,7 +10,7 @@
 int main()
 {
    //Player, PlayerList, PlayerListHandler
-	Player* p = new Player("Brayden", "Bowler", 7.50);
+	/*Player* p = new Player("Brayden", "Bowler", 7.50);
 	Player* p2 = new Player("Harrison", "Bowler", 25.00);
 
 	p->displayPlayer();
@@ -40,34 +42,52 @@ int main()
 
 	PlayerListHandler::savePlayerList(playerList);
 
-	PlayerList* newPlayerList = PlayerListHandler::loadPlayerList();
+	PlayerList* newPlayerList = PlayerListHandler::loadPlayerList();*/
 
-	//Course
-	Course* newCourse = new Course();
+	//Course, CourseList, CourseListHandler
 
-	string courseName = "The Heathlands";
-	string clubName = "Osprey Valley";
-	char coursePar = 72;
-	double courseRating = 73.8;
+	//string courseName = "The Heathlands";
+	//string clubName = "Osprey Valley";
+	//char coursePar = 72;
+	//double courseRating = 73.8;
 
-	Course* anotherNewCourse = new Course(courseName, clubName, courseRating, coursePar);
+	//Course* anotherNewCourse = new Course(courseName, clubName, courseRating, coursePar);
+	////anotherNewCourse->displayCourse();
 
-	courseName = "Savannah Golf Links";
-	clubName = "N/A";
-	coursePar = 71;
-	courseRating = 69.4;
+	//Course* newCourse = new Course();
+	//courseName = "Savannah Golf Links";
+	//clubName = "N/A";
+	//coursePar = 71;
+	//courseRating = 69.4;
 
-	newCourse->setCourseName(courseName);
-	newCourse->setClubName(clubName);
-	newCourse->setCourseRating(courseRating);
-	newCourse->setCoursePar(coursePar);
+	//newCourse->setCourseName(courseName);
+	//newCourse->setClubName(clubName);
+	//newCourse->setCourseRating(courseRating);
+	//newCourse->setCoursePar(coursePar);
 
-	newCourse->displayCourse();
-	anotherNewCourse->displayCourse();
+	////newCourse->displayCourse();
+
+	//CourseList* courseList = new CourseList();
+	//courseList->addCourse(anotherNewCourse);
+	//courseList->addCourse(newCourse);
+
+	//courseList->displayCourseList();
+
+	//courseList->removeCourse(anotherNewCourse);
+
+	//courseList->displayCourseList();
+
+	//courseList->addCourse(anotherNewCourse);
+
+	//CourseListHandler::saveCourseList(courseList);
+
+	CourseList* newCourseList = CourseListHandler::loadCourseList();
+
+	newCourseList->displayCourseList();
 
 	//Round
 
-	string courseName = "The Heathlands";
+	/*string courseName = "The Heathlands";
 	string clubName = "Osprey Valley";
 	char coursePar = 72;
 	double courseRating = 73.8;
@@ -88,7 +108,7 @@ int main()
 
 	round->displayRound();
 	myOtherRound->displayRound();
-	myOtherOtherRound->displayRound();
+	myOtherOtherRound->displayRound();*/
 
 
 	return 0;

@@ -20,7 +20,7 @@ Course::Course() {
 /// <param name="clubName">The club the Course belongs to, if applicable.</param>
 /// <param name="courseName">The name of the Course.</param>
 /// <param name="courseRating">Rating of the course.</param>
-/// <param name="coursePar">Pay of the course.</param>
+/// <param name="coursePar">Par of the course.</param>
 Course::Course(std::string clubName, std::string courseName, double courseRating, char coursePar) {
 
 	this->clubName = clubName;
